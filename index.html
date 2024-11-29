@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Monster</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Meu Monstro:</h1>
+    
+    <form id="registerMonster">
+      <label for="monsterName">Nome:</label>
+      <input type="text" name="monsterName" id="monsterName">
+      <br><br>
+      <label for="monsterElement">Elemento:</label>
+        <select name="monsterElement" id="monsterElement">
+        <option value="" disabled selected>Selecione o elemento!</option>
+        <option value="Fogo">Fogo</option>
+        <option value="Água">Água</option>
+        <option value="Terra">Terra</option>
+        <option value="Ar">Ar</option>
+        </select>
+        <br><br>
+      <label for="monsterHealth">Pontos de Vida:</label>
+      <input type="number" name="monsterHealth" id="monsterHealth">
+      <br><br>
+      <label for="monsterHabilities">Habilidades:</label>
+      <input type="text" name="monsterHabilities" id="monsterHabilities">
+      <br><br>
+      <button type="submit">Adicionar Monstro</button>
+    </form>
+
+    <h2>Lista de Monstros</h2>
+    <ul id="monsterList"></ul>
+    
+    <script src="index.js"></script>
+</body>
+</html>
